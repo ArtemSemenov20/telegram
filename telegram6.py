@@ -81,6 +81,7 @@ async def food_size_chosen(message: Message, state: FSMContext):
 
 @dp.message(OrderFood.choosing_food_size)
 async def food_size_chosen_incorrectly(message: Message):
+    print("Hello..epgfe,qrgh,")
     await message.answer(
         text="Я не знаю такого размера порции.\n\n"
              "Пожалуйста, выберите один из вариантов из списка ниже:",
